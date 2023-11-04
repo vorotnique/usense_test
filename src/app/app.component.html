@@ -1,0 +1,31 @@
+<section>
+  <form [formGroup]="form">
+    <input type="password" formControlName="password" (input)="handlePasswordChange()" required/>
+    <div class="sections">
+      <div
+        class="sections__part"
+        [class.red]="form.value.password.length && (!validationResult[0] || validationStatus < 3)"
+        [class.yellow]="validationResult[0] && validationStatus === 3"
+        [class.green]="validationResult[0] && validationStatus === 4"
+      ></div>
+      <div
+        class="sections__part"
+        [class.red]="form.value.password.length && !validationResult[0]"
+        [class.yellow]="validationResult[0] && validationStatus === 3"
+        [class.green]="validationResult[0] && validationStatus === 4"
+      ></div>
+      <div
+        class="sections__part"
+        [class.red]="form.value.password.length && !validationResult[0]"
+        [class.green]="validationResult[0] && validationStatus === 4"
+      ></div>
+    </div>
+    <span
+      [class.redtext]="form.value.password.length && (!validationResult[0] || validationStatus < 3)"
+      [class.yellowtext]="validationResult[0] && validationStatus === 3"
+      [class.greentext]="validationResult[0] && validationStatus === 4"
+    >
+      {{ message }}
+    </span>
+  </form>
+</section>
