@@ -1,0 +1,6 @@
+<div class="sections" [ngClass]="conclusion.strength">
+	<div *ngFor="let item of [].constructor(3)" class="sections__part"></div>
+</div>
+<span [ngClass]="conclusion.strength + '-text'">
+	{{ conclusion.message }}
+</span>

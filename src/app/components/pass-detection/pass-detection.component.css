@@ -1,0 +1,41 @@
+.sections {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+	margin-bottom: 4px;
+}
+
+.sections__part {
+	background-color: lightgray;
+	height: 5px;
+	border-radius: 5px;
+}
+
+span {
+	color: gray;
+}
+
+.short .sections__part,
+.weak .sections__part:first-child {
+	background-color: tomato;
+}
+
+.medium .sections__part:not(:last-child) {
+	background-color: orange;
+}
+
+.strong .sections__part {
+	background-color: limegreen;
+}
+
+.weak-text, .short-text {
+	color: tomato;
+}
+
+.medium-text {
+	color: orange;
+}
+
+.strong-text {
+	color: limegreen;
+}

@@ -7,54 +7,6 @@ section {
 }
 
 form {
-	margin-bottom: 2rem;
-}
-
-input {
-	font-size: 20px;
-	padding: 8px;
-	margin-bottom: 8px;
-	width: 300px;
-}
-
-.sections {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 8px;
-	margin-bottom: 4px;
-}
-
-.sections__part {
-	background-color: lightgray;
-	height: 5px;
-	border-radius: 5px;
-}
-
-span {
-	color: gray;
+	width: 100%;
 	max-width: 300px;
-}
-
-.red {
-	background-color: tomato;
-}
-
-.yellow {
-	background-color: orange;
-}
-
-.green {
-	background-color: limegreen;
-}
-
-.redtext {
-	color: tomato;
-}
-
-.yellowtext {
-	color: orange;
-}
-
-.greentext {
-	color: limegreen;
 }
